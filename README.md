@@ -8,22 +8,31 @@
 [![License](http://img.shields.io/npm/l/mocha-phantomjs-coverage-hook.svg?style=flat-square)](LICENSE)
 [![npm download](https://img.shields.io/npm/dm/mocha-phantomjs-coverage-hook.svg?style=flat-square)](https://npmjs.org/package/mocha-phantomjs-coverage-hook)
 
-coverage hook for mocha-phantomjs
+Coverage hook for mocha-phantomjs
 
 ## Installation
 
 ```bash
+$ npm install --save mocha-phantomjs
 $ npm install --save mocha-phantomjs-coverage-hook
 ```
 
 ## Usage
 
-## Test
+```javascript
+gulp.task('istanbulify', function() {
+  return gulp.src(['src/**/*.js'])
+    .pipe(istanbul({
+      coverageVariable: '__coverage__' // use __coverage__
+    }))
+    .pipe(gulp.dest('test'));
+});
+```
+
+Coverage command:
 
 ```bash
-$ npm run test
-$ npm run test-cov
-$ npm run test-travis
+$ ./node_modules/.bin/mocha-phantomjs your-test-file.html --hooks ./node_modules/mocha-phantomjs-coverage-hook/index
 ```
 
 ## License
