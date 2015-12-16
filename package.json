@@ -1,0 +1,21 @@
+{
+  "name": "mocha-phantomjs-coverage-hook",
+  "version": "0.0.1",
+  "description": "coverage hook for mocha-phantomjs",
+  "main": "index.js",
+  "author": "LingyuCoder",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/mocha-phantomjs-coverage-hook"
+  },
+  "keywords": [
+    "mocha",
+    "phantomjs",
+    "coverage",
+    "hook"
+  ],
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/mocha-phantomjs-coverage-hook/issues"
+  }
+}
